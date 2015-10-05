@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		40E99C9C1BC2FCE90083D95A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E99C9B1BC2FCE90083D95A /* AppDelegate.swift */; };
-		40E99C9E1BC2FCE90083D95A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E99C9D1BC2FCE90083D95A /* ViewController.swift */; };
+		40E99C9E1BC2FCE90083D95A /* VCIntro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E99C9D1BC2FCE90083D95A /* VCIntro.swift */; };
 		40E99CA11BC2FCE90083D95A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40E99C9F1BC2FCE90083D95A /* Main.storyboard */; };
 		40E99CA31BC2FCE90083D95A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40E99CA21BC2FCE90083D95A /* Images.xcassets */; };
 		40E99CA61BC2FCE90083D95A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40E99CA41BC2FCE90083D95A /* LaunchScreen.xib */; };
@@ -828,6 +828,7 @@
 		40E9A31B1BC303EE0083D95A /* netflix-806.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 40E99FEC1BC303EE0083D95A /* netflix-806.jpg */; };
 		40E9A31C1BC303EE0083D95A /* netflix-807.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 40E99FED1BC303EE0083D95A /* netflix-807.jpg */; };
 		40E9A31D1BC303EE0083D95A /* netflix-808.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 40E99FEE1BC303EE0083D95A /* netflix-808.jpg */; };
+		40E9A3201BC30DD50083D95A /* VCListeDesFilms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E9A31F1BC30DD50083D95A /* VCListeDesFilms.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -844,7 +845,7 @@
 		40E99C961BC2FCE80083D95A /* TIMFlix-1232450.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TIMFlix-1232450.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		40E99C9A1BC2FCE90083D95A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		40E99C9B1BC2FCE90083D95A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		40E99C9D1BC2FCE90083D95A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		40E99C9D1BC2FCE90083D95A /* VCIntro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCIntro.swift; sourceTree = "<group>"; };
 		40E99CA01BC2FCE90083D95A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		40E99CA21BC2FCE90083D95A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		40E99CA51BC2FCE90083D95A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -1666,6 +1667,7 @@
 		40E99FEC1BC303EE0083D95A /* netflix-806.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "netflix-806.jpg"; sourceTree = "<group>"; };
 		40E99FED1BC303EE0083D95A /* netflix-807.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "netflix-807.jpg"; sourceTree = "<group>"; };
 		40E99FEE1BC303EE0083D95A /* netflix-808.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "netflix-808.jpg"; sourceTree = "<group>"; };
+		40E9A31F1BC30DD50083D95A /* VCListeDesFilms.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCListeDesFilms.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1708,8 +1710,8 @@
 			isa = PBXGroup;
 			children = (
 				40E99CBD1BC303E80083D95A /* images */,
+				40E9A31E1BC30DB00083D95A /* Class */,
 				40E99C9B1BC2FCE90083D95A /* AppDelegate.swift */,
-				40E99C9D1BC2FCE90083D95A /* ViewController.swift */,
 				40E99C9F1BC2FCE90083D95A /* Main.storyboard */,
 				40E99CA21BC2FCE90083D95A /* Images.xcassets */,
 				40E99CA41BC2FCE90083D95A /* LaunchScreen.xib */,
@@ -2579,6 +2581,15 @@
 				40E99FEE1BC303EE0083D95A /* netflix-808.jpg */,
 			);
 			path = netflix;
+			sourceTree = "<group>";
+		};
+		40E9A31E1BC30DB00083D95A /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				40E99C9D1BC2FCE90083D95A /* VCIntro.swift */,
+				40E9A31F1BC30DD50083D95A /* VCListeDesFilms.swift */,
+			);
+			name = Class;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -3496,7 +3507,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40E99C9E1BC2FCE90083D95A /* ViewController.swift in Sources */,
+				40E9A3201BC30DD50083D95A /* VCListeDesFilms.swift in Sources */,
+				40E99C9E1BC2FCE90083D95A /* VCIntro.swift in Sources */,
 				40E99C9C1BC2FCE90083D95A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
