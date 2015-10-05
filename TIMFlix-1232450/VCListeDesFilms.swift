@@ -8,7 +8,7 @@
 
 import UIKit
 
-class VCListeDesFilms: UIViewController {
+class VCListeDesFilms: UIViewController, UITableViewDataSource {
 
     var tableauDesVideos: Array< Dictionary <String,String> > = []
     
@@ -24,11 +24,22 @@ class VCListeDesFilms: UIViewController {
         } // if let path ...
         
         // Trace temporaire
-        let unFilm = tableauDesVideos[0] as NSDictionary
-        let titre = unFilm["titre"] as! String
-        println("Le titre du film est: \(titre)")
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return tableauDesVideos.count
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        // Do any additional setup after loading the view.
+        var videoCourant = tableauDesVideos[indexPath.row] as Dictionary <String,String>
+        var celluleCourante = tableView.dequeueReusableCellWithIdentifier("modele", forIndexPath: indexPath) as! TVCellFilm
+        
+        celluleCourante.filmTitre.text = videoCourant["titre"]
+        celluleCourante.filmAnne.text = videoCourant["annee"]
+        celluleCourante.filmPochette.image = UIImage(named: videoCourant["pochette"]!)
+        
+        return celluleCourante
     }
 
     /*

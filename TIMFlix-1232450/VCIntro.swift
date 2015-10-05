@@ -14,7 +14,6 @@ class VCIntro: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        println("Exemple avec GITHUB")
          let timer = NSTimer.scheduledTimerWithTimeInterval(2.0, target: self, selector: Selector("tournerLaPage"), userInfo: nil, repeats: false)
     }
     

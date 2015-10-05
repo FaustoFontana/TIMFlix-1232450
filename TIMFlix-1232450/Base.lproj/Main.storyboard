@@ -56,14 +56,14 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="103" id="6rZ-pL-hmH">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="modele" rowHeight="103" id="6rZ-pL-hmH" customClass="TVCellFilm" customModule="TIMFlix_1232450" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="22" width="320" height="103"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6rZ-pL-hmH" id="AA1-4D-cil">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="102"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="qf5-gh-66Y">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="qf5-gh-66Y">
                                                     <rect key="frame" x="8" y="4" width="76" height="94"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
                                                 </imageView>
@@ -95,8 +95,16 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.098039224743843079" green="0.12549020349979401" blue="0.55686277151107788" alpha="1" colorSpace="deviceRGB"/>
+                                        <connections>
+                                            <outlet property="filmAnne" destination="LIX-ag-pJZ" id="G5e-71-CkY"/>
+                                            <outlet property="filmPochette" destination="qf5-gh-66Y" id="7At-Wx-2U1"/>
+                                            <outlet property="filmTitre" destination="ua1-O7-9Gx" id="tGI-vT-q6f"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="KU0-gq-nP3" id="Tmy-qR-3e2"/>
+                                </connections>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TIMFLIX" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zX5-9Z-Fvj">
                                 <rect key="frame" x="16" y="5" width="288" height="46"/>
