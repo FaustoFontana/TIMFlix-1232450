@@ -13,6 +13,7 @@
 		40E99CA31BC2FCE90083D95A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40E99CA21BC2FCE90083D95A /* Images.xcassets */; };
 		40E99CA61BC2FCE90083D95A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40E99CA41BC2FCE90083D95A /* LaunchScreen.xib */; };
 		40E99CB21BC2FCE90083D95A /* TIMFlix_1232450Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E99CB11BC2FCE90083D95A /* TIMFlix_1232450Tests.swift */; };
+		40E99CBC1BC2FFCA0083D95A /* cerise.png in Resources */ = {isa = PBXBuildFile; fileRef = 40E99CBB1BC2FFCA0083D95A /* cerise.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		40E99CAB1BC2FCE90083D95A /* TIMFlix-1232450Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TIMFlix-1232450Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		40E99CB01BC2FCE90083D95A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		40E99CB11BC2FCE90083D95A /* TIMFlix_1232450Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TIMFlix_1232450Tests.swift; sourceTree = "<group>"; };
+		40E99CBB1BC2FFCA0083D95A /* cerise.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cerise.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		40E99C981BC2FCE80083D95A /* TIMFlix-1232450 */ = {
 			isa = PBXGroup;
 			children = (
+				40E99CBB1BC2FFCA0083D95A /* cerise.png */,
 				40E99C9B1BC2FCE90083D95A /* AppDelegate.swift */,
 				40E99C9D1BC2FCE90083D95A /* ViewController.swift */,
 				40E99C9F1BC2FCE90083D95A /* Main.storyboard */,
@@ -192,6 +195,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40E99CBC1BC2FFCA0083D95A /* cerise.png in Resources */,
 				40E99CA11BC2FCE90083D95A /* Main.storyboard in Resources */,
 				40E99CA61BC2FCE90083D95A /* LaunchScreen.xib in Resources */,
 				40E99CA31BC2FCE90083D95A /* Images.xcassets in Resources */,
